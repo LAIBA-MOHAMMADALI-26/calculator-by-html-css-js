@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="cal.js"> -->
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .bg-black {
+            background-color: black;
+            color: white;
+            margin: auto;
+            max-width: 20vw;
+            border: 4px solid orange;
+            border-radius: 10%;
+            /* max-width: 14vw; */
+        }
+
+        .button {
+            padding: 20px;
+            margin: 2px 0px;
+            border: 4px solid orange;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            margin: 2px 2px;
+
+        }
+
+        .input {
+            padding: 20px;
+            border: 5px double black;
+            /* border-radius: 10%; */
+            border-radius: 10%;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #C {
+            padding: 20px;
+            margin: 2px 0px;
+            border: 4px solid orange;
+            border-radius: 20px;
+            cursor: pointer;
+            /* width:10px ; */
+            /* padding: 20px; */
+            width: 155px;
+            margin-right: 15px;
+            background-color: orange;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Calculate:</h1>
+    <div class="container bg-black">
+        <div class="input">
+            <input type="text" class="input">
+        </div>
+        <div class="c">
+            <button class="button" id="C">C</button>
+            <button class="button">%</button>
+        </div>
+        <div class="row">
+
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+
+        </div>
+        <div class="row">
+
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+
+        </div>
+        <div class="row">
+
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+
+        </div>
+        <div class="row">
+
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button">/</button>
+            <button class="button">=</button>
+
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>
